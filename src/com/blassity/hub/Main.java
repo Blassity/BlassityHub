@@ -13,6 +13,7 @@ import com.blassity.hub.listeners.PlayerJoin;
 
 public class Main extends JavaPlugin {
 
+	//Casper als je iets wilt toevoegen aan deze lijst, doe het maar!
 	//TODO: Command log
 	
 	@Override
