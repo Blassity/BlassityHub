@@ -8,3 +8,6 @@ commands:
     host:
         description: Credit for the best host ever
         usage: </command>
+    help:
+        description: Hello I like trains
+        usage: </command>
