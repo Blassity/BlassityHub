@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.blassity.hub.commands.Help;
 import com.blassity.hub.commands.Host;
+import com.blassity.hub.listeners.EntityDamage;
 import com.blassity.hub.listeners.PlayerJoin;
 
 public class Main extends JavaPlugin {
@@ -15,6 +16,7 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable(){
 		registerListener(new PlayerJoin());
+		registerListener(new EntityDamage());
 		
 		getCommand("host").setExecutor(new Host());
 		getCommand("help").setExecutor(new Help());
