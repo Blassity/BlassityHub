@@ -13,10 +13,12 @@ public class Main extends JavaPlugin {
 	public void onEnable(){
 		registerListener(new PlayerJoin());
 	}
+	
 	@Override
 	public void onDisable(){
 		
 	}
+	
 	private void registerListener(Listener listener){
 		PluginManager pman = Bukkit.getServer().getPluginManager();
 		pman.registerEvents(listener, this);
