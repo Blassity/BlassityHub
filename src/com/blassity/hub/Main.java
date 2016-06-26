@@ -13,6 +13,8 @@ import com.blassity.hub.listeners.PlayerJoin;
 
 public class Main extends JavaPlugin {
 
+	//TODO: Command log
+	
 	@Override
 	public void onEnable(){
 		registerListener(new PlayerJoin());
