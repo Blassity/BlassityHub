@@ -31,11 +31,6 @@ public class Main extends JavaPlugin {
 		regenerateHunger();
 	}
 	
-	@Override
-	public void onDisable(){
-		
-	}
-	
 	private void registerListener(Listener listener){
 		PluginManager pman = Bukkit.getServer().getPluginManager();
 		pman.registerEvents(listener, this);
