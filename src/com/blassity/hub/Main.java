@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.blassity.hub.commands.Help;
 import com.blassity.hub.commands.Host;
+import com.blassity.hub.commands.Spawn;
 import com.blassity.hub.listeners.EntityDamage;
 import com.blassity.hub.listeners.PlayerInteract;
 import com.blassity.hub.listeners.PlayerJoin;
@@ -25,6 +26,7 @@ public class Main extends JavaPlugin {
 		
 		getCommand("host").setExecutor(new Host());
 		getCommand("help").setExecutor(new Help());
+		getCommand("spawn").setExecutor(new Spawn());
 		
 		regenerateHunger();
 	}
