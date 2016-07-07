@@ -19,16 +19,22 @@ public class Main extends JavaPlugin {
 	//TODO: Command log
 	
 	@Override
-	public void onEnable(){
+	public void onEnable(){				
+		regenerateHunger();
+		registerListeners();
+		registerCommands();
+	}
+	
+	private void registerListeners(){
 		registerListener(new PlayerJoin());
 		registerListener(new EntityDamage());
 		registerListener(new PlayerInteract());
-		
+	}
+	
+	private void registerCommands(){
 		getCommand("host").setExecutor(new Host());
 		getCommand("help").setExecutor(new Help());
 		getCommand("spawn").setExecutor(new Spawn());
-		
-		regenerateHunger();
 	}
 	
 	private void registerListener(Listener listener){
