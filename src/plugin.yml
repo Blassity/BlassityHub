@@ -11,3 +11,6 @@ commands:
     help:
         description: Hello I like trains
         usage: </command>
+    spawn:
+        description: Does not teleport you to spawn
+        usage: </command>
